@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "www.raptorcoders.com": {
+    "raptorcoders": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/www.raptorcoders.com",
+            "outputPath": "dist/raptorcoders",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -25,6 +25,9 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/scss/bootstrap.scss",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/css/styles.css",
               "src/assets/css/colors.css"
             ],
@@ -61,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "www.raptorcoders.com:build:production"
+              "browserTarget": "raptorcoders:build:production"
             },
             "development": {
-              "browserTarget": "www.raptorcoders.com:build:development"
+              "browserTarget": "raptorcoders:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +75,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "www.raptorcoders.com:build"
+            "browserTarget": "raptorcoders:build"
           }
         },
         "test": {

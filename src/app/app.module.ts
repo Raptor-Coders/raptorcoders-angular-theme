@@ -13,6 +13,8 @@ import { CourseReviewComponent } from './course-review/course-review.component';
 import { SubscribeComponent } from './subscribe/subscribe.component';
 import { CourseFurtherInfoComponent } from './course-further-info/course-further-info.component';
 import { CourseFurtherInfo2Component } from './course-further-info2/course-further-info2.component';
+import { FooterComponent } from './footer/footer.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -26,11 +28,13 @@ import { CourseFurtherInfo2Component } from './course-further-info2/course-furth
     CourseReviewComponent,
     SubscribeComponent,
     CourseFurtherInfoComponent,
-    CourseFurtherInfo2Component
+    CourseFurtherInfo2Component,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
